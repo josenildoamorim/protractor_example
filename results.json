@@ -1,0 +1,59 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Busca Google",
+    "line": 3,
+    "id": "busca-google",
+    "tags": [],
+    "uri": "features\\Search.feature",
+    "elements": [
+      {
+        "id": "busca-google;buscar",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Buscar",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 6,
+            "name": "eu pesquiso por \"Globo\"",
+            "match": {
+              "location": "features\\steps\\search.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 7,
+            "name": "eu devo ver os resultados referentes a \"Globo\"",
+            "match": {
+              "location": "features\\steps\\search.steps.js:17"
+            },
+            "result": {
+              "status": "pending",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
