@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:webdriver": "webdriver-manager update && webdriver-manager start",
-    "test": "protractor conf.js"
+    "test": "protractor conf.js --verbose"
   },
   "author": "Josenildo Santos",
   "license": "ISC",

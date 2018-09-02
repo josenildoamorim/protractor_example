@@ -10,35 +10,47 @@
       {
         "id": "busca-google;buscar",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 8,
         "name": "Buscar",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Quando ",
+            "keyword": "Dado ",
             "line": 6,
-            "name": "eu pesquiso por \"Globo\"",
+            "name": "que eu esteja na pagina inciial do Google",
             "match": {
-              "location": "features\\steps\\search.steps.js:11"
+              "location": "features\\steps\\search.steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 9,
+            "name": "eu pesquiso por \"Globo\"",
+            "match": {
+              "location": "features\\steps\\search.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
-            "line": 7,
-            "name": "eu devo ver os resultados referentes a \"Globo\"",
+            "line": 10,
+            "name": "eu devo ver os resultados referentes a globo",
             "match": {
-              "location": "features\\steps\\search.steps.js:17"
+              "location": "features\\steps\\search.steps.js:19"
             },
             "result": {
-              "status": "pending",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -49,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           }
         ]

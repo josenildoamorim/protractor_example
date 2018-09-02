@@ -4,12 +4,7 @@ exports.config = {
     baseUrl: 'http://wwww.google.com.br',
     specs: ['features/*.feature'],
     capabilities: {
-      browserName: 'chrome',
-      chromeOptions: {
-        args: [
-          '--disable-gpu',
-        ],
-      },
+      browserName: 'chrome'
     },
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
