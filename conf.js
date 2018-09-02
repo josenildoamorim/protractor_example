@@ -1,7 +1,6 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     ignoreUncaughtExceptions: true,
-    baseUrl: 'http://wwww.google.com.br',
     specs: ['features/*.feature'],
     capabilities: {
       browserName: 'chrome'
@@ -10,7 +9,7 @@ exports.config = {
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     cucumberOpts: {
       require: 'features/step_definitions/*.steps.js',
-      tags: ['~@NaoImplementado'],
+      tags: ['@Store'],
       format: ['json:results.json'],
       profile: false,
       ignoreUndefinedDefinitions: true,

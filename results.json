@@ -1,27 +1,32 @@
 [
   {
     "keyword": "Funcionalidade",
-    "name": "Busca Google",
+    "name": "Busca de Produtos",
     "line": 3,
-    "id": "busca-google",
+    "id": "busca-de-produtos",
     "tags": [],
-    "uri": "features\\Search.feature",
+    "uri": "features\\StoreSearch.feature",
     "elements": [
       {
-        "id": "busca-google;buscar",
+        "id": "busca-de-produtos;buscar-por-nome-completo",
         "keyword": "Scenario",
-        "line": 8,
-        "name": "Buscar",
-        "tags": [],
+        "line": 9,
+        "name": "Buscar por nome completo",
+        "tags": [
+          {
+            "name": "@Store",
+            "line": 8
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Dado ",
             "line": 6,
-            "name": "que eu esteja na pagina inciial do Google",
+            "name": "que eu esteja na pagina incial da Loja",
             "match": {
-              "location": "features\\steps\\search.steps.js:8"
+              "location": "features\\steps\\storeSearch.steps.js:8"
             },
             "result": {
               "status": "passed",
@@ -31,10 +36,10 @@
           {
             "arguments": [],
             "keyword": "Quando ",
-            "line": 9,
-            "name": "eu pesquiso por \"Globo\"",
+            "line": 10,
+            "name": "pesquiso por \"Star Wars V: O Retorno de Jedi\"",
             "match": {
-              "location": "features\\steps\\search.steps.js:13"
+              "location": "features\\steps\\storeSearch.steps.js:13"
             },
             "result": {
               "status": "passed",
@@ -44,10 +49,138 @@
           {
             "arguments": [],
             "keyword": "Então ",
-            "line": 10,
-            "name": "eu devo ver os resultados referentes a globo",
+            "line": 11,
+            "name": "devo o produto \"Star Wars V: O Retorno de Jedi\" pesquisado com sucesso",
             "match": {
-              "location": "features\\steps\\search.steps.js:19"
+              "location": "features\\steps\\storeSearch.steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca-de-produtos;buscar-por-parte-do-nome",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Buscar por parte do nome",
+        "tags": [
+          {
+            "name": "@Store",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que eu esteja na pagina incial da Loja",
+            "match": {
+              "location": "features\\steps\\storeSearch.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 15,
+            "name": "pesquiso por \"Star\"",
+            "match": {
+              "location": "features\\steps\\storeSearch.steps.js:13"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 16,
+            "name": "devo ver o resultado contendo \"Star\" como parte do nome",
+            "match": {
+              "location": "features\\steps\\storeSearch.steps.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca-de-produtos;buscar-por-produto-sem-estoque",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Buscar por produto sem estoque",
+        "tags": [
+          {
+            "name": "@Store",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que eu esteja na pagina incial da Loja",
+            "match": {
+              "location": "features\\steps\\storeSearch.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 20,
+            "name": "pesquiso por \"Lagoa Azul\"",
+            "match": {
+              "location": "features\\steps\\storeSearch.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 21,
+            "name": "devo o produto pesquisado com insdisponível",
+            "match": {
+              "location": "features\\steps\\storeSearch.steps.js:33"
             },
             "result": {
               "status": "passed"
@@ -62,6 +195,71 @@
             "result": {
               "status": "passed",
               "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "busca-de-produtos;buscar-por-produto-inexistente",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Buscar por produto inexistente",
+        "tags": [
+          {
+            "name": "@Store",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que eu esteja na pagina incial da Loja",
+            "match": {
+              "location": "features\\steps\\storeSearch.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 25,
+            "name": "pesquiso por \"Senhor dos Aneis\"",
+            "match": {
+              "location": "features\\steps\\storeSearch.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 26,
+            "name": "devo uma mensagem de produto não cadastrado",
+            "match": {
+              "location": "features\\steps\\storeSearch.steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
