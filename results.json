@@ -24,13 +24,13 @@
             "arguments": [],
             "keyword": "Dado ",
             "line": 6,
-            "name": "que eu esteja na pagina incial da Loja",
+            "name": "que eu esteja na pagina inicial da Loja",
             "match": {
               "location": "features\\steps\\storeSearch.steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 3148000000
             }
           },
           {
@@ -39,11 +39,11 @@
             "line": 10,
             "name": "pesquiso por \"Star Wars V: O Retorno de Jedi\"",
             "match": {
-              "location": "features\\steps\\storeSearch.steps.js:13"
+              "location": "features\\steps\\storeSearch.steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 1408000000
             }
           },
           {
@@ -52,11 +52,11 @@
             "line": 11,
             "name": "devo o produto \"Star Wars V: O Retorno de Jedi\" pesquisado com sucesso",
             "match": {
-              "location": "features\\steps\\storeSearch.steps.js:19"
+              "location": "features\\steps\\storeSearch.steps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 126000000
             }
           },
           {
@@ -66,8 +66,7 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
@@ -89,13 +88,13 @@
             "arguments": [],
             "keyword": "Dado ",
             "line": 6,
-            "name": "que eu esteja na pagina incial da Loja",
+            "name": "que eu esteja na pagina inicial da Loja",
             "match": {
               "location": "features\\steps\\storeSearch.steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 789000000
             }
           },
           {
@@ -104,10 +103,11 @@
             "line": 15,
             "name": "pesquiso por \"Star\"",
             "match": {
-              "location": "features\\steps\\storeSearch.steps.js:13"
+              "location": "features\\steps\\storeSearch.steps.js:14"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1471000000
             }
           },
           {
@@ -116,10 +116,11 @@
             "line": 16,
             "name": "devo ver o resultado contendo \"Star\" como parte do nome",
             "match": {
-              "location": "features\\steps\\storeSearch.steps.js:26"
+              "location": "features\\steps\\storeSearch.steps.js:30"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 109000000
             }
           },
           {
@@ -129,8 +130,7 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "arguments": [],
             "keyword": "Dado ",
             "line": 6,
-            "name": "que eu esteja na pagina incial da Loja",
+            "name": "que eu esteja na pagina inicial da Loja",
             "match": {
               "location": "features\\steps\\storeSearch.steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 525000000
             }
           },
           {
@@ -167,11 +167,11 @@
             "line": 20,
             "name": "pesquiso por \"Lagoa Azul\"",
             "match": {
-              "location": "features\\steps\\storeSearch.steps.js:13"
+              "location": "features\\steps\\storeSearch.steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 756000000
             }
           },
           {
@@ -180,10 +180,11 @@
             "line": 21,
             "name": "devo o produto pesquisado com insdisponível",
             "match": {
-              "location": "features\\steps\\storeSearch.steps.js:33"
+              "location": "features\\steps\\storeSearch.steps.js:39"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 46000000
             }
           },
           {
@@ -194,7 +195,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           }
         ]
@@ -216,13 +217,13 @@
             "arguments": [],
             "keyword": "Dado ",
             "line": 6,
-            "name": "que eu esteja na pagina incial da Loja",
+            "name": "que eu esteja na pagina inicial da Loja",
             "match": {
               "location": "features\\steps\\storeSearch.steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 710000000
             }
           },
           {
@@ -231,11 +232,11 @@
             "line": 25,
             "name": "pesquiso por \"Senhor dos Aneis\"",
             "match": {
-              "location": "features\\steps\\storeSearch.steps.js:13"
+              "location": "features\\steps\\storeSearch.steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 1638000000
             }
           },
           {
@@ -244,11 +245,11 @@
             "line": 26,
             "name": "devo uma mensagem de produto não cadastrado",
             "match": {
-              "location": "features\\steps\\storeSearch.steps.js:39"
+              "location": "features\\steps\\storeSearch.steps.js:46"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 14000000
             }
           },
           {
@@ -258,8 +259,7 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]

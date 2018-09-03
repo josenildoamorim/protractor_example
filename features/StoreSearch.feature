@@ -3,7 +3,7 @@
 Funcionalidade: Busca de Produtos
 
 Contexto:
-    Dado que eu esteja na pagina incial da Loja
+    Dado que eu esteja na pagina inicial da Loja
 
 @Store
 Cenário: Buscar por nome completo
